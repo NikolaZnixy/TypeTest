@@ -289,6 +289,8 @@ function countCorrectWords() {
   return correctAmount;
 }
 
+//////////// LISTENERS ///////////////////
+
 document.addEventListener('keydown', function (e) {
   e.preventDefault();
 
