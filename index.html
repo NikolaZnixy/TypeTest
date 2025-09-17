@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeCode</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="properties.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <figure id="logo-image--container">
+        <img
+          id="logo-image"
+          src="images/typeCodeLogo.png"
+          alt="typeCodeLogoImage_keyboard_with_app_name"
+        />
+      </figure>
+      <div class="timer-container">
+        <h1 class="current-time" data-clock="60">60</h1>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <div class="options option-words-container">
+          <i class="fa-brands fa-wikipedia-w"></i>
+          <h4>Words</h4>
+          <div class="choose words-choose-container">
+            <h4 data-words="50" class="option">50</h4>
+            <h4 data-words="100" class="option">100</h4>
+            <h4 data-words="200" class="option">200</h4>
+          </div>
+        </div>
+        <div class="options option-time-container">
+          <i class="fa-solid fa-clock"></i>
+          <h4>Time</h4>
+          <div class="choose time-choose-container">
+            <h4 data-time="10" class="option">10s</h4>
+            <h4 data-time="30" class="option">30s</h4>
+            <h4 data-time="60" class="option">60s</h4>
+          </div>
+        </div>
+      </nav>
+      <section class="time-up-container">
+        <h2>Challange Finished!</h2>
+      </section>
+      <section class="statistics-container">
+        <h1 class="correct-words-label stat"></h1>
+        <h1 class="seconds-elapsed-label stat"></h1>
+        <h1 class="wpm-label stat"></h1>
+      </section>
+      <section class="typing--container">
+        <h2></h2>
+      </section>
+    </main>
+    <footer>
+      <h4><a href="https://nhegel.com">nhegel.com</a></h4>
+    </footer>
+  </body>
+</html>

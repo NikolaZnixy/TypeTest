@@ -1,0 +1,177 @@
+:root {
+  --primaryGreen: #7ed957;
+  --secondaryGreen: #56ab31;
+  --white: #e1e1e1;
+  --black: #000000;
+  --red: red;
+  --navy: #000080;
+}
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid black; */
+  transition: all 0.3s ease-in-out;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  margin-right: 20%;
+}
+.statistics-container {
+  display: none;
+}
+
+.stat {
+  color: var(--white);
+  margin-right: 20px;
+}
+
+.none {
+  display: none;
+}
+
+#logo-image {
+  width: 40%;
+  margin-left: 100px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--secondaryGreen);
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+nav,
+.typing--container {
+  display: flex;
+  width: 80%;
+}
+
+.time-up-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  color: var(--white);
+  opacity: 0;
+}
+
+nav {
+  justify-content: space-around;
+  min-height: 7vh;
+  background-color: var(--white);
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.options:hover {
+  cursor: pointer;
+}
+.options i,
+h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.active-mode {
+  color: var(--navy);
+}
+
+.choose {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  transform: translateX(-40px);
+  opacity: 0;
+}
+
+.showOptions {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.typing--container {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+  height: 30vh;
+  gap: 5px;
+  width: 75%;
+
+  font-size: 25px;
+}
+
+.word {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.word.fading {
+  opacity: 0;
+}
+.letter {
+  margin-left: 1px;
+}
+
+.correct {
+  color: var(--white);
+}
+.wrong {
+  color: var(--red);
+}
+
+.cursor-svg {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+footer {
+  min-height: 80px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+}
